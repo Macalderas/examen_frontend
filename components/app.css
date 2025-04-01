@@ -1,36 +1,27 @@
-.container {
-  max-width: 400px;
-  margin: auto;
+
+
+#root {
+  background: white;
   padding: 20px;
-  border: 1px solid #0e0d0d;
-  border-radius: 10px;
-  background: #b8afaf;
-}
-
-input, select, button {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  margin: 5px 0;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+button {
+  background: blue;
+  color: white;
+  border: none;
   padding: 10px;
-  font-size: 16px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-}
-
-.si-vino { background: #a8e6a3; }
-.no-vino { background: #f5b7b1; }
-.si-vino-tarde { background: #afad2f; }
-
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-  }
+  cursor: pointer;
 }
